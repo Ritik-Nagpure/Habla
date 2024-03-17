@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Habla | Social Media Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Habla, your go-to social networking platform for engaging conversations and meaningful connections.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-Time Chat:** Seamlessly interact with friends and followers through real-time messaging powered by SendBird Chat API.
+- **User Profiles:** Create personalized profiles, share interests, and connect with others in the community.
+- **Dynamic Feeds:** Customize your feed to stay updated on the latest conversations, posts, and activities from your network.
+- **Notifications:** Receive instant notifications for new messages, mentions, and interactions to stay connected wherever you go.
+- **Privacy Controls:** Manage privacy settings to control who can view your profile, messages, and posts for a secure and personalized experience.
 
-## Expanding the ESLint configuration
+## Technology Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js**: JavaScript library for building user interfaces.
+- **TypeScript**: Typed superset of JavaScript for building scalable applications.
+- **Tailwind CSS**: Utility-first CSS framework for creating custom designs quickly.
+- **React Router DOM**: Declarative routing for React applications.
+- **SendBird Chat API**: Real-time chat API for integrating messaging functionality.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Getting Started
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To get started with Habla, follow these simple steps:
+
+1. Clone this repository to your local machine.
+2. Install dependencies by running `npm install`.
+3. Configure the necessary settings, including database connections and API keys.
+4. Start the development server by running `npm run dev`.
+5. Open your web browser and visit `http://localhost:5173` to access Habla.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to Habla, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and ensure that the code is well-documented.
+4. Test your changes thoroughly.
+5. Submit a pull request detailing your changes.
