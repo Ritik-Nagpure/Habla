@@ -1,8 +1,5 @@
-
 function ChatFoot() {
-  return (
-    <div>ChatFoot</div>
-  )
+  return <div>ChatFoot</div>;
 }
 
-export default ChatFoot
+export default ChatFoot;
