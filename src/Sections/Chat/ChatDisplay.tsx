@@ -2,6 +2,7 @@ import Chat from './Chat'
 import ChatFoot from './ChatFoot'
 import ChatHead from './ChatHead'
 
+
 function ChatDisplay() {
   return (
     <div className="flex flex-col h-full">

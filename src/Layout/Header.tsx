@@ -1,6 +1,6 @@
 import favicon from "/App/favicon.svg";
 import profile from "/App/profile.svg";
-
+import settings from "/Icons/settings.svg"
 import Search from "../Components/Search";
 
 function Header() {
@@ -22,7 +22,10 @@ function Header() {
       </div>
 
       <div className="flex flex-row justify-end gap-2">
-        <p className="my-auto">Settings</p>
+        <img
+          src={settings}
+          className="rounded-full sm:h-10 sm:w-10 h-8 w-6 m-auto"
+        />
         <img
           src={profile}
           className="rounded-full sm:h-12 sm:w-12 h-10 w-10 m-auto"
