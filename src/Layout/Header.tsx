@@ -1,31 +1,31 @@
+import favicon from "/App/favicon.svg";
+import profile from "/App/profile.svg";
 
-import favicon from '/App/favicon.svg'
-import profile from '/App/profile.svg'
+import Search from "../Components/Search";
 
 function Header() {
-    return (
-        <div className="container-fluid mx-auto rounded-md sm:h-fit w-full">
-            <div className="flex flex-row justify-between mx-1">
-                <div className="flex flex-row justify-start p-1">
-                    <img src={favicon} className='rounded-full h-12 w-12' />
-                    <p className="text-3xl ml-2 font-bold m-auto font-cursive text-cyan-500 ">                        
-                        Habla
-                    </p>
-                </div>
-                <div className="sm:w-2/5 w-fit px-3 bg-gray-200 border-2 border-gray-400 rounded-full my-1">
-                    <p className="py-2 text-center text-xl ">
-                        Search
-                    </p>
-                </div>
-                <div className="flex flex-row justify-end w-24">
-                    <p className="text-lg">
-                    <img src={profile} className='rounded-full h-12 w-12' />
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    )
+  return (
+    <div className="flex flex-row rounded-md mx-2 bg-red-200 justify-between px-2">
+      <div className="flex flex-row justify-start p-1">
+        <img src={favicon} className="rounded-full sm:h-12 sm:w-12 h-10 w-10 m-auto" />
+        
+        <p className="text-xl sm:text-3xl ml-2 font-bold m-auto font-cursive text-cyan-500 ">
+          Habla
+        </p>
+      </div>
+      
+      <div className="bg-gray-200 border-2 border-gray-400 rounded-full h-fit m-auto p-1">
+          <Search/>
+      </div>
+      
+      <div className="flex flex-row justify-end gap-2">
+          <p className="my-auto">
+            Settings
+          </p>
+          <img src={profile} className="rounded-full sm:h-12 sm:w-12 h-10 w-10 m-auto" />
+      </div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

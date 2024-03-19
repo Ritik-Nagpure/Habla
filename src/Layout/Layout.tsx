@@ -1,21 +1,17 @@
-import Header from './Header'
-import Footer from './Footer'
-import App from './App'
+import Header from "./Header";
+import Footer from "./Footer";
+import App from "./App";
 
 function Layout() {
   return (
-    <div className="flex flex-col p-1 h-full">
-      <div className="">
-        <Header />
-      </div>
-      <div className="flex-grow rounded-md p-2">
+    <div className="flex flex-col p-1 h-screen">
+      <Header />
+      <div className="flex-grow rounded-md overflow-hidden p-2">
         <App />
       </div>
-      <div className="">
-        <Footer />
-      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
