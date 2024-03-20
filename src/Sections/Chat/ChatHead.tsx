@@ -6,7 +6,7 @@ function ChatHead() {
     <div className="flex flex-row rounded-md justify-between px-2">
       
       <div className="flex flex-row justify-start p-1 gap-2">
-        <img src={back} className="rounded-full h-6 w-6 m-auto in visible sm:hidden" />
+        <img src={back} className="rounded-full h-8 w-8 m-auto in visible sm:hidden" />
         <img src={profile} className="rounded-full sm:h-12 sm:w-12 h-10 w-10 m-auto" />
         <div className="flex flex-col w-5/6 px-2">
             <p className="text-lg"> Name </p>

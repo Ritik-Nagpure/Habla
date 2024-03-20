@@ -2,8 +2,8 @@ import Chatbox from "../../Components/Chatbox";
 import { users } from "../../DummyData/chatusers.tsx";
 
 function ChatMenu() {
-  const chatArray = users.map((user: any, index: number) => (
-    <div key={index}>
+  const chatArray = users.map((user: any) => (
+    <div key={user.id} >
       <Chatbox name={user.name} image ={user.image} message={user.message}/>
     </div>
   ));

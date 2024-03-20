@@ -1,45 +1,44 @@
 import ChatDisplay from "../Sections/Chat/ChatDisplay";
 import ChatMenu from "../Sections/ChatMenu/ChatMenu";
+import React, { useState } from "react";
 
 function App() {
-  // const [selectedItem, setSelectedItem] = useState(null);
+  const [isChatSelected, setIsChatSelected] = useState(false);
 
-  // const handleItemClick = (item) => {
-  //   setSelectedItem(item);
+  // const [selectedChat, setSelectedChat] = useState(null);
+
+  // const handleChatClick = (Chat) => {
+  //   setSelectedChat(Chat);
+  //   setIsChatSelected(true);
   // };
 
   // const handleBackClick = () => {
-  //   setSelectedItem(null);
+  //   setSelectedChat(null);
+  //   setIsChatSelected(false);
   // };
 
   return (
-    <div className="grid sm:grid-cols-3 gap-1 h-full">
-      <div className="sm:col-span-1 overflow-auto bg-gray-300 rounded-md  md:visible">
-        <ChatMenu />
-      </div>
-      <div className="sm:col-span-2 overflow-auto bg-gray-300 rounded-md  sm:block">
-        <ChatDisplay />
-      </div>
-    </div>
-
-    // <div>
-    //   {!selectedItem && <ChatMenu items={leftItems} onItemClick={handleItemClick} />}
-    //   {selectedItem && <ChatDisplay selectedItem={selectedItem} onBackClick={handleBackClick} />}
-
-    //   <div className="grid sm:grid-cols-3 gap-1 h-full">
-    //     <div className="sm:col-span-1 overflow-auto bg-gray-300 rounded-md md:visible" onClick={selectedChat()}>
-    //       <ChatMenu />
-    //     </div>
-    //     <div className="sm:col-span-2 overflow-auto bg-gray-300 rounded-md hidden sm:block">
-    //       <ChatDisplay />
-    //     </div>
+    // <div className="grid sm:grid-cols-3 gap-1 h-full">
+    //   <div className="sm:col-span-1 overflow-auto bg-gray-300 rounded-md  sm:visible">
+    //     <ChatMenu />
+    //   </div>
+    //   <div className="sm:col-span-2 overflow-auto bg-gray-300 rounded-md  sm:block">
+    //     <ChatDisplay />
     //   </div>
     // </div>
+
+    <div className="grid sm:grid-cols-3 gap-1 h-full">
+          <div className={`${ isChatSelected ? `hidden` : `block`} sm:col-span-1 overflow-auto bg-gray-300 rounded-md  sm:visible`}>
+          <ChatMenu />
+      </div>
+     
+        <div className={`${ isChatSelected ? `block` : `hidden`} sm:col-span-2 overflow-auto bg-gray-300 rounded-md  sm:block`}>
+          <ChatDisplay />
+      </div>
+    </div>
   );
 }
 
-function selectedChat() {
-
-}
+function selectedChat() {}
 
 export default App;

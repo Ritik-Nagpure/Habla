@@ -7,57 +7,57 @@ export interface userObject {
 export const users: userObject[] = [
   {
     name: "Alice",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Hello, how are you?",
   },
   {
     name: "Bob",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Just chilling!",
   },
   {
     name: "Charlie",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Good morning everyone!",
   },
   {
     name: "David",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Happy coding!",
   },
   {
     name: "Eve",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Let's go for a hike!",
   },
   {
     name: "Frank",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Having fun with React!",
   },
   {
     name: "Frank",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Having fun with React!",
   },
   {
     name: "Frank",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Having fun with React!",
   },
   {
     name: "Frank",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Having fun with React!",
   },
   {
     name: "Frank",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Having fun with React!",
   },
   {
     name: "Frank",
-    image: "https://via.placeholder.com/150",
+    image: "",
     message: "Having fun with React!",
   },
   {

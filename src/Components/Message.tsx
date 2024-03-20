@@ -32,7 +32,7 @@ const Message: React.FC<MessageProps> = ({ content, timestamp, sender }) => {
         <div className="absolute left-1 h-6 w-12 lg:max-w-xl sm:max-w-md max-w-xs rounded-bl-full rounded-tr-full rounded-br-xl pl-2 bg-green-400">
         </div>
         <div className="relative lg:max-w-xl sm:max-w-md max-w-xs rounded-lg px-3 bg-green-400 py-1">
-          <p className="text-md text-justify px-2">
+          <p className="text-md px-2">
             {content}
           </p>
           <p className="text-xs text-end">
